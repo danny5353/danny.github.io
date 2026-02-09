@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danny Zambrana Sanabria | Portafolio</title>
+  <meta name="description" content="Portafolio personal de Danny Zambrana Sanabria — Ingeniero de Sistemas | Full Stack" />
+  <meta name="theme-color" content="#070A14" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__noise"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand__dot"></span>
+      <span class="brand__name">Danny Zambrana</span>
+      <span class="brand__tag">Portafolio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#perfil">Perfil</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#certificados">Certificados</a>
+      <a class="nav__cta" href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+      <span class="iconbtn__icon" aria-hidden="true">☾</span>
+    </button>
+
+    <button class="iconbtn iconbtn--menu" id="menuBtn" type="button" aria-label="Abrir menú" title="Menú">
+      <span class="iconbtn__icon" aria-hidden="true">≡</span>
+    </button>
+  </header>
+
+  <main id="inicio" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__left reveal">
+        <p class="kicker"><span class="kicker__pill">Ingeniería de Sistemas</span> <span class="kicker__sep">•</span> Full Stack</p>
+        <h1 class="hero__title">
+          Danny Zambrana Sanabria
+          <span class="hero__subtitle" id="typeTarget">Construyendo soluciones tecnológicas</span>
+        </h1>
+
+        <p class="hero__summary">
+          Egresado de Ingeniería de Sistemas de la Universidad Católica Boliviana San Pablo, apasionado por la tecnología y la programación.
+          Con experiencia en bases de datos y sólidas habilidades para el trabajo en equipo, la resolución de problemas y el manejo eficiente de la presión.
+          Busco una oportunidad profesional desafiante para aplicar y seguir fortaleciendo mis competencias en el ámbito tecnológico.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Contactar</a>
+          <a class="btn btn--ghost" href="#experiencia">Ver experiencia</a>
+          <a class="btn btn--primary btn--download" href="assets/PORTAFOLIO_DANNY_ZAMBRANA.pdf" download>Descargar CV (PDF)</a>
+          <button class="btn btn--ghost" id="printBtn" type="button">Imprimir / PDF</button>
+        </div>
+
+        <div class="hero__chips">
+          <span class="chip">Angular</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Docker</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Scrum</span>
+        </div>
+      </div>
+
+      <div class="hero__right reveal">
+        <div class="card card--hero">
+          <div class="card__scan" aria-hidden="true"></div>
+
+          <div class="card__header">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/danny-avatar.jpg" alt="" />
+            </div>
+            <div class="card__meta">
+              <div class="card__name">Danny Zambrana Sanabria</div>
+              <div class="card__role">Desarrollador Full Stack</div>
+              <div class="card__status">
+                <span class="pulse"></span> Disponible para nuevos retos
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+</div>
+
+            <div class="stat">
+              <div class="stat__label">Enfoque</div>
+              <div class="stat__value">Soluciones empresariales</div>
+            </div>
+            <div class="stat">
+              <div class="stat__label">Stack</div>
+              <div class="stat__value">Web • APIs • Datos</div>
+            </div>
+            <div class="stat">
+              <div class="stat__label">Metodología</div>
+              <div class="stat__value">Scrum • Sprints</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="quick">
+              <button class="quick__item" data-copy="danny.zambrana.sanabria@gmail.com" type="button">
+                <span class="quick__k">Email</span>
+                <span class="quick__v">danny.zambrana.sanabria@gmail.com</span>
+              </button>
+              <button class="quick__item" data-copy="75225680" type="button">
+                <span class="quick__k">Teléfono</span>
+                <span class="quick__v">75225680</span>
+              </button>
+            </div>
+            <p class="hint">Tip: haz clic para copiar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Perfil</h2>
+        <p class="section__desc">Resumen profesional y propuesta de valor.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3 class="card__title">Sobre mí</h3>
+          <p class="card__text">
+            Me apasiona construir productos claros, mantenibles y bien estructurados. Combino pensamiento analítico,
+            enfoque en resultados y comunicación efectiva para transformar requerimientos en soluciones funcionales.
+          </p>
+          <ul class="bullets">
+            <li>Resolución efectiva de problemas y mejora continua</li>
+            <li>Trabajo colaborativo y coordinación de tareas</li>
+            <li>Manejo eficiente de presión y priorización</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title">Fortalezas</h3>
+          <div class="tags">
+            <span class="tag">Pensamiento lógico</span>
+            <span class="tag">Arquitectura modular</span>
+            <span class="tag">APIs REST</span>
+            <span class="tag">Modelado de datos</span>
+            <span class="tag">Entrega incremental</span>
+            <span class="tag">Comunicación</span>
+            <span class="tag">Liderazgo</span>
+            <span class="tag">Scrum</span>
+          </div>
+          <div class="divider"></div>
+          <p class="card__text">
+            Interesado en entornos dinámicos donde se valore la calidad del código, la colaboración y la evolución constante del producto.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Habilidades</h2>
+        <p class="section__desc">Tecnologías, herramientas y prácticas de trabajo.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skills__col card reveal">
+          <h3 class="card__title">Lenguajes</h3>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">PHP</span>
+          </div>
+
+          <h3 class="card__title mt">Frontend</h3>
+          <div class="tags">
+            <span class="tag">Angular</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Flutter</span>
+          </div>
+
+          <h3 class="card__title mt">Backend</h3>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">APIs REST</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skills__col card reveal">
+          <h3 class="card__title">Datos & Dev</h3>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Modelado</span>
+          </div>
+
+          <h3 class="card__title mt">Control de versiones</h3>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Trabajo colaborativo</span>
+          </div>
+
+          <h3 class="card__title mt">Contenedores & despliegue</h3>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Entornos</span>
+            <span class="tag">Deploy</span>
+          </div>
+
+          <h3 class="card__title mt">Herramientas</h3>
+          <div class="tags">
+            <span class="tag">VS Code</span>
+            <span class="tag">IntelliJ IDEA</span>
+            <span class="tag">Postman</span>
+          </div>
+        </div>
+
+        <div class="skills__col card reveal">
+          <h3 class="card__title">Metodologías</h3>
+          <ul class="bullets">
+            <li>Experiencia trabajando con metodologías ágiles <strong>Scrum</strong></li>
+            <li>Planificación y seguimiento de tareas mediante <strong>sprints</strong></li>
+            <li>Liderazgo en proyectos de desarrollo de software</li>
+            <li>Coordinación de equipos técnicos y asignación de tareas</li>
+            <li>Enfoque en entrega de soluciones eficientes y escalables</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3 class="card__title">Diseño & análisis</h3>
+          <div class="tags">
+            <span class="tag">Photoshop</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Vegas</span>
+            <span class="tag">ArcGIS</span>
+            <span class="tag">Stata</span>
+            <span class="tag">R</span>
+            <span class="tag">Office</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Experiencia</h2>
+        <p class="section__desc">Proyectos y roles en entornos empresariales.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Abril 2023 – Diciembre 2024</div>
+          <div class="timeline__title">Taller Mecánico Fremach — Desarrollador Full Stack</div>
+          <p class="timeline__text">Implementación de un sistema para la gestión de órdenes de trabajo, servicios y repuestos.</p>
+        </div>
+
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Febrero 2024 – Enero 2025</div>
+          <div class="timeline__title">Empresa Lotus — Desarrollador Full Stack</div>
+          <p class="timeline__text">Sistema de gestión para gasolinera: control de ventas, inventario y reportes operativos.</p>
+        </div>
+
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Febrero 2025 – Septiembre 2025</div>
+          <div class="timeline__title">Clínica Manos Abiertas — Desarrollador Full Stack</div>
+          <p class="timeline__text">Sistema de gestión clínica para control de pacientes, citas y servicios médicos.</p>
+        </div>
+
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Junio 2025 – Agosto 2025</div>
+          <div class="timeline__title">Animatics — Desarrollador Full Stack</div>
+          <p class="timeline__text">Software de gestión para imprenta: pedidos, producción y administración de clientes.</p>
+        </div>
+
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Julio 2025 – Enero 2026</div>
+          <div class="timeline__title">Empresa Virebo — Desarrollador Full Stack</div>
+          <p class="timeline__text">Software de créditos: gestión de clientes, evaluación financiera y control de préstamos.</p>
+        </div>
+
+        <div class="timeline__item card reveal">
+          <div class="timeline__when">Septiembre 2025 – Enero 2026</div>
+          <div class="timeline__title">Clínica Maurer — Desarrollador Front End</div>
+          <p class="timeline__text">Historial clínico y gestión de atenciones, mejorando el acceso y organización de información.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACION + IDIOMAS -->
+    <section id="educacion" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Educación & Idiomas</h2>
+        <p class="section__desc">Formación académica y competencias lingüísticas.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3 class="card__title">Educación</h3>
+          <div class="edu">
+            <div class="edu__row">
+              <div class="edu__inst">Boliviano Alemán Ave María</div>
+              <div class="edu__when">2008 – 2014</div>
+              <div class="edu__desc">Bachillerato</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="edu__row">
+              <div class="edu__inst">Universidad Católica Boliviana “San Pablo”</div>
+              <div class="edu__when">2016 – 2022</div>
+              <div class="edu__desc">Ingeniería de Sistemas</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title">Idiomas</h3>
+          <div class="lang">
+            <div class="lang__row">
+              <span>Inglés</span>
+              <span class="meter" aria-label="Nivel medio">
+                <span class="meter__fill" style="width: 65%"></span>
+              </span>
+              <span class="lang__lvl">Medio</span>
+            </div>
+            <div class="lang__row">
+              <span>Quechua</span>
+              <span class="meter" aria-label="Nivel medio">
+                <span class="meter__fill" style="width: 60%"></span>
+              </span>
+              <span class="lang__lvl">Medio</span>
+            </div>
+          </div>
+          <p class="hint">*Indicadores visuales referenciales.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Participación en proyectos</h2>
+        <p class="section__desc">Investigación y proyectos académicos.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3 class="card__title">Proyecto de grado (2021)</h3>
+          <p class="card__text">
+            “Sistema inteligente de apoyo al proceso de pre-evaluación en operaciones crediticias”
+            — Universidad Católica Boliviana San Pablo.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title">Workshop — Ingeniería de Sistemas</h3>
+          <ul class="bullets">
+            <li>1-2016: Videojuego de aprendizaje “Foor Binary”.</li>
+            <li>2-2016: Página de ventas “Orquideareo”.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Certificados</h2>
+        <p class="section__desc">Formación complementaria y credenciales.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3 class="card__title">CISCO — Network Academy</h3>
+          <ul class="bullets">
+            <li>Entrepreneurship ES 0118 (25 de mayo 2020)</li>
+            <li>Introducción a Packet Tracer (13 de junio 2020)</li>
+            <li>NDG Linux Revelado (13 de junio 2020)</li>
+            <li>Introducción a la Ciberseguridad (22 de noviembre 2018)</li>
+            <li>¡Conéctate! (22 de noviembre 2018)</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title">Universidad Católica Boliviana</h3>
+          <ul class="bullets">
+            <li>Computación en la nube (1-2021)</li>
+          </ul>
+          <div class="divider"></div>
+          <p class="card__text">
+            En constante aprendizaje: mejores prácticas, herramientas modernas y fundamentos de infraestructura.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--contact">
+      <div class="section__head reveal">
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__desc">¿Trabajamos juntos? Estoy disponible para conversar.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <h3 class="card__title">Información</h3>
+          <div class="contact">
+            <div class="contact__row">
+              <span class="contact__k">Email</span>
+              <a class="contact__v" href="mailto:danny.zambrana.sanabria@gmail.com">danny.zambrana.sanabria@gmail.com</a>
+              <button class="mini" data-copy="danny.zambrana.sanabria@gmail.com" type="button">Copiar</button>
+            </div>
+            <div class="contact__row">
+              <span class="contact__k">Teléfono</span>
+              <a class="contact__v" href="tel:+59175225680">75225680</a>
+              <button class="mini" data-copy="75225680" type="button">Copiar</button>
+            </div>
+          </div>
+          <p class="hint">Este sitio es estático (ideal para GitHub Pages).</p>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title">Mensaje rápido</h3>
+          <form class="form" id="contactForm">
+            <label class="field">
+              <span>Tu nombre</span>
+              <input required name="name" placeholder="Ej: Carla Pérez" />
+            </label>
+
+            <label class="field">
+              <span>Tu correo</span>
+              <input required type="email" name="email" placeholder="Ej: carla@email.com" />
+            </label>
+
+            <label class="field field--full">
+              <span>Mensaje</span>
+              <textarea required name="message" rows="5" placeholder="Cuéntame sobre tu proyecto o vacante…"></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Generar email</button>
+              <button class="btn btn--ghost" type="reset">Limpiar</button>
+            </div>
+            <p class="hint">No envía datos: abre tu cliente de correo con el mensaje listo.</p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__left">© <span id="year"></span> Danny Zambrana Sanabria</div>
+      <div class="footer__right">
+        <a href="#inicio">Subir</a>
+        <span class="footer__sep">•</span>
+        <a href="#" id="toastTest">Estado</a>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

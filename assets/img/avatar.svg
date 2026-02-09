@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#1DE2FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="18" y="18" width="220" height="220" rx="44" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+  <circle cx="128" cy="100" r="46" fill="url(#g)" opacity="0.95" filter="url(#glow)"/>
+  <path d="M48 216c18-42 48-64 80-64s62 22 80 64" fill="url(#g)" opacity="0.9" filter="url(#glow)"/>
+  <path d="M70 74h116" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <path d="M78 184h100" stroke="rgba(255,255,255,0.20)" stroke-width="2"/>
+  <text x="128" y="244" text-anchor="middle" font-family="Inter, Arial" font-size="14" fill="rgba(255,255,255,0.55)">DZ</text>
+</svg>
